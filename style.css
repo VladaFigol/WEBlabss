@@ -1,0 +1,259 @@
+* {
+    color: white;
+    box-sizing: border-box;
+    }
+    
+    .back {
+    background-image: url('/пікчі/bg.png');
+    }
+    
+    .menu {
+      display: flex;
+      background-color: #0e0606;
+    }
+    
+    .menu-item {
+      float: center;
+    }
+    
+    .menu-item:last-child {
+      margin-right: 0;
+    }
+    
+    .menu-item a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+    
+    .menu-item a:hover {
+    background-color: #472626;
+    }
+    
+    .title {
+        text-align: center;
+        font-style: italic;
+        text-shadow: 2px 2px rgb(116, 4, 4);
+    }
+    
+    #main-box {
+    display: flex;
+    width: 100%;
+    }
+    
+    .main-text {
+    width: 75%;
+    float: left;
+    display: block;
+    margin: 10px;
+    text-align: left;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .text2 {
+    margin: 15px;
+    text-align: left;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .img-main {
+    width: 20%;
+    min-width: 300px;
+    max-height: 270px;
+    float: left;
+    display: block;
+    margin-top: 30px;
+    }
+    
+    .filmpic {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 70px;
+        background-color: black;
+    
+    }
+    
+    .filmel {
+        width: 10%;
+        height: auto;
+        margin: 7px;
+    }
+    
+    #catalog-box {
+        width: 100%;
+        display: flex;
+    }
+    
+    .forms {
+        width: 20%;
+        display: block;
+        border: 1px solid whitesmoke;
+        /* min-width: 200px; */
+    }
+    
+    .catalog {
+        width: 80%;
+        height: 400px;
+        overflow: auto;
+        display: block;
+        float: left;
+        border: 1px solid whitesmoke;
+        /* min-width: 500px; */
+    }
+    
+    a[target="_self"] {
+      font-style: italic;
+    }
+    
+    a:link {
+    color: rgb(133, 207, 42);
+    background-color: transparent;
+    font-size: 17px;
+    text-decoration: none;
+    }
+      
+    a:visited {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+    }
+      
+    a:hover {
+    color: rgb(152, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+    }
+      
+    a:active {
+    color: rgb(255, 91, 91);
+    background-color: transparent;
+    text-decoration: underline;
+    }
+    
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+      
+    th, td {
+    padding: 8px;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 1px solid #ffffff;
+    }
+    
+    th {
+        background-color:  #0e0606;
+    }
+      
+    tr:hover {
+    background-color: #8b2121;
+    }
+    
+    button {
+    background-color: black;
+    font-size: 16px; 
+    }
+    
+    button:hover {
+    background-color: rgb(94, 13, 13);
+    }
+    
+    label {
+    font-size: 17px;
+    }
+    
+    h1.dotted {
+    outline-style: dotted;
+    outline-color: white;
+    }
+    
+    img.afisha {
+    height: 200px;
+    width: 150px;
+    }
+    
+    #myheader {
+    padding: 5px
+    }
+    
+    .foot-box {
+    display: flex;
+    margin-top: 10px;
+    background-color: #0e0606;
+    }
+
+    option {
+        color: black;
+    }
+
+    input {
+        color: black;
+        width: 70px;
+    }
+
+    select  {
+        width: 70px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+      }
+
+      
+      .aside {
+        background-color: rgb(16, 12, 12);
+        padding: 15px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      }
+      
+      
+      /* Мобільна версія: */
+      [class*="col-"] {
+        width: 100%;
+      }
+      
+      @media only screen and (min-width: 600px) {
+        /* Планшетна версія: */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+      }
+      @media only screen and (min-width: 880px) {
+        /* Десктопна версія: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+      }

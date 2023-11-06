@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Каталог найкращих українських фільмів</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="back">
+    <header id="myheader">
+        <div class="menu">
+            <div class="menu-item"><a href="#main-box">Детальніше про проєкт</a></div>
+            <div class="menu-item"><a href="#catalog-box">Каталог</a></div>
+            <div class="menu-item"><a href="#catalog-box">Пошук</a></div>
+          </div>
+    </header>
+
+<main>
+    <h1 class="title">Каталог найкращих українських фільмів</h1>
+    <div class="row">
+        <div class="col-3 col-s-3">
+      Український кінематограф зростає в популярності, пропонуючи різноманітні жанри та тематики. 
+      Дивлячись українські фільми, ми можемо краще зрозуміти проблеми нашої країни та підтримати розвиток вітчизняного кіно.
+      У даному каталозі зібрані популярні українські фільми, що отримали шквал позитивних відгуків від глядачів.
+        </div>
+      
+        <div class="col-6 col-s-9">
+          <div id="catalog-box">
+              <div class="forms">
+                  <h2 class="text1">Опції</h2>
+                  <form>
+                      <label for="sortSelect">Сортувати каталог:</label>
+                      <select id="sortSelect" onchange="sortTable()">
+                      <option value="alphabetic">За алфавітом</option>
+                      <option value="year">За роком виходу</option>
+                      </select>
+                  </form>
+                  <br>
+                  <form>
+                      <label for="searchInput">Знайти фільм:</label>
+                      <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Пошук">
+                  </form>
+              </div>
+              
+              <div class="catalog">
+                  <table id="myTable">
+                      <tr>
+                        <th>Назва</th>
+                        <th>Рік</th>
+                        <th>Жанр</th>
+                        <th>Афіша</th>
+                      </tr>
+                      <tr>
+                        <td>Кіборги</td>
+                        <td>2017</td>
+                        <td>Екшн, військова драма</td>
+                        <td><img class="afisha" src="/пікчі/кіборги.jpg" alt="kiborgi"></td>
+                      </tr>
+                      <tr>
+                        <td>Тіні забутих предків</td>
+                        <td>1964</td>
+                        <td>Художній</td>
+                        <td><img class="afisha" src="/пікчі/тіні_забутих_предків.jpg" alt="tini"></td>
+                      </tr>
+                      <tr>
+                        <td>Мої думки тихі</td>
+                        <td>2019</td>
+                        <td>Трагікомедія</td>
+                        <td><img class="afisha" src="/пікчі/мої_думки_тихі.jpg" alt="dumki"></td>
+                      </tr>
+                      <tr>
+                        <td>Атлантида</td>
+                        <td>2019</td>
+                        <td>Драма</td>
+                        <td><img class="afisha" src="/пікчі/атлантида.jpg" alt="atlantida"></td>
+                      </tr>
+                      <tr>
+                          <td>Жива ватра</td>
+                          <td>2014</td>
+                          <td>Науково-пізнавальний, документальний</td>
+                          <td><img class="afisha" src="/пікчі/жива_ватра.jpg" alt="vatra"></td>
+                        </tr>
+                    </table>
+                    <div id="tableContainer"></div>
+              </div>
+              </div>
+        </div>
+      
+        <div class="col-3 col-s-12">
+          <div>
+            <h2>Знаєте, що шукаєте?</h2>
+      <p>Введіть назву фільму в поле пошуку</p>
+      <h2>Не знаєте точну назву фільму, який шукаєте?</h2>
+      <p>Введіть в поле пошуку перші кілька літер або слова, які містяться в назві</p>
+      <h2>Не маєте конкретного фільму на думці?</h2>
+      <p>Відсортуйте наявний каталог за роком випуску або в алфавітному порядку</p>
+          </div>
+        </div>
+      </div>
+</main>
+
+<footer>
+    <div class="foot-box">
+        <p class="text2">Створено в межах лабораторної роботи 4 з дисципліни "Інтернет-технології та проєктування WEB-застосунків" студенткою групи ІС-23 Фіголь Владиславою.</p>
+    </div>
+</footer>
+
+	
+</body>
+</html>
